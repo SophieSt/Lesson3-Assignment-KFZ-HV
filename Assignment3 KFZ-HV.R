@@ -9,10 +9,18 @@
 # not divisible by 100 except for years divisible by 400.
 
 is.leap = function (year) {
+  # this function will check if the given year is/was a leap year
+  leap = FALSE
   try_num = try(is.numeric(year), silent=TRUE)  # check for type of year, years are given in integer format
   if (class(try_num) == 'try-error') {
     return('year must be of type numeric')   # return a message, if year is not numeric
   } else {
-    
+    if ((year % 4) == 0) {
+    leap = TRUE
+    } else if ((year % 100) == 0) {
+    leap = FALSE
+    } else if ((year % 400) == 0) {
+    leap = TRUE
+  return leap
   }
 }
