@@ -1,7 +1,5 @@
-# This function checks for a leap year
-
 is.leap = function (year) {
-  # this function will check if the given year is/was a leap year
+  # checks this function if the given year is/was a leap year
   leap = FALSE   # general assumption year is not leap year, unless checked for it being so
 
   is.num = is.numeric(year)  # check for type of year, years are given in integer format
