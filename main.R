@@ -3,6 +3,9 @@
 # Date: 11-01-2017
 
 # Assignment on Lesson 3
+# This file is meant to provide a function which checks a given year on whether it is/was a leap year.
+# A leap year is by definition a year, divisible by 4,
+# not divisible by 100 except for years divisible by 400.
 
 # no library imports needed
 
